@@ -33,17 +33,17 @@ tasks.
 
 """
 
-from hfos.component import ConfigurableComponent, handler
-from hfos.database import objectmodels
-from hfos.logger import hfoslog, error, warn, critical, events
-from hfos.events.system import authorizedevent
+from isomer.component import ConfigurableComponent, handler
+from isomer.database import objectmodels
+from isomer.logger import isolog, error, warn, critical, events
+from isomer.events.system import authorized_event
 from pprint import pprint
 
 
 class Equipment(ConfigurableComponent):
     """
     """
-    channel = "hfosweb"
+    channel = 'isomer-web'
 
     configprops = {
     }

@@ -42,9 +42,9 @@ This software package is a plugin module for HFOS.
       install_requires=[
           'hfos>=1.2.0'
       ],
-      entry_points="""[hfos.components]
+      entry_points="""[isomer.components]
     equipment=hfos.equipment.equipment:Equipment
-[hfos.schemata]
+[isomer.schemata]
     equipment=hfos.equipment.schemata.equipment:Equipment
     """,
       test_suite="tests.main.main",
