@@ -1,4 +1,4 @@
-HFOS - Equipment
+Isomer - Equipment
 ================
 
 This module provides additional functionality for equipment management in the form of

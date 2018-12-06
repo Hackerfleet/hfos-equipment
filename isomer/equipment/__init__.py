@@ -1,1 +1,1 @@
-"""Countables components for HFOS"""
+"""Equipment management for HFOS"""

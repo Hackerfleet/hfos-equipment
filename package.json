@@ -1,7 +1,7 @@
 {
-  "name": "hfos-countables",
+  "name": "hfos-equipment",
   "version": "0.0.1",
-  "description": "A countables module for HFOS",
+  "description": "An equipment module for HFOS",
   "preferGlobal": true,
   "scripts": {
     "build": "webpack --config webpack.build.js --bail -p",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hackerfleet/hfos-countables.git"
+    "url": "https://github.com/hackerfleet/hfos-equipment.git"
   },
   "author": "Heiko 'riot' Weinen",
   "license": "AGPLv3",
   "bugs": {
-    "url": "https://github.com/hackerfleet/hfos-countables/issues"
+    "url": "https://github.com/hackerfleet/hfos-equipment/issues"
   },
-  "homepage": "https://github.com/hackerfleet/hfos-countables",
+  "homepage": "https://github.com/hackerfleet/hfos-equipment",
   "dependencies": {
   },
   "devDependencies": {
