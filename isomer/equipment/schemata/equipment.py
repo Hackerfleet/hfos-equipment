@@ -3,7 +3,7 @@
 
 # HFOS - Hackerfleet Operating System
 # ===================================
-# Copyright (C) 2011-2018 Heiko 'riot' Weinen <riot@c-base.org> and others.
+# Copyright (C) 2011-2019 Heiko 'riot' Weinen <riot@c-base.org> and others.
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as published by
@@ -42,8 +42,10 @@ StatusEnums = ['Okay', 'Not quite right',
                'Broken', 'Maintenance', 'Needs attention']
 
 EquipmentSchema['properties'].update({
-    'notes': {'type': 'string', 'format': 'html', 'title': 'User notes',
-              'description': 'Entry notes'},
+    'notes': {
+        'type': 'string', 'format': 'html', 'title': 'User notes',
+        'description': 'Entry notes'
+    },
     'status': {
         'type': 'string', 'title': 'Status',
         'description': 'Current status of equipment',

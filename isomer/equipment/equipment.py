@@ -3,7 +3,7 @@
 
 # HFOS - Hackerfleet Operating System
 # ===================================
-# Copyright (C) 2011-2018 Heiko 'riot' Weinen <riot@c-base.org> and others.
+# Copyright (C) 2011-2019 Heiko 'riot' Weinen <riot@c-base.org> and others.
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as published by
@@ -65,10 +65,10 @@ class Equipment(ConfigurableComponent):
 
         self.log('Cached', len(self.equipment), 'Equipment items')
 
-    #@handler()
-    #def authorized_event_handler(self, event, *args, **kwargs):
+    # @handler()
+    # def authorized_event_handler(self, event, *args, **kwargs):
     #    self.log(event, args, kwargs)
-        #if isinstance(event, authorizedevent):
-        #    self.log('Event:', event)
-        #    account = self.accounts[event.useruuid]
-        #    self.log('Account', account)
+    # if isinstance(event, authorizedevent):
+    #    self.log('Event:', event)
+    #    account = self.accounts[event.useruuid]
+    #    self.log('Account', account)
