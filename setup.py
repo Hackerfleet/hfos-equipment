@@ -3,7 +3,7 @@
 
 # HFOS - Hackerfleet Operating System
 # ===================================
-# Copyright (C) 2011-2018 Heiko 'riot' Weinen <riot@c-base.org> and others.
+# Copyright (C) 2011-2019 Heiko 'riot' Weinen <riot@c-base.org> and others.
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as published by
@@ -23,29 +23,46 @@ __license__ = "AGPLv3"
 
 from setuptools import setup, find_packages
 
-setup(name="hfos-equipment",
-      version="0.0.1",
-      description="hfos-equipment - a module for managing equipment",
-      author="Hackerfleet Community",
-      author_email="riot@c-base.org",
-      url="https://github.com/hackerfleet/hfos-equipment",
-      license="GNU Affero General Public License v3",
-      packages=find_packages(),
-      long_description="""HFOS - Equipment
+setup(
+    name="hfos-equipment",
+    version="0.0.1",
+    description="hfos-equipment - a module for managing equipment",
+    author="Hackerfleet Community",
+    author_email="riot@c-base.org",
+    url="https://github.com/hackerfleet/hfos-equipment",
+    license="GNU Affero General Public License v3",
+    classifiers=[
+        'Development Status :: 2 - Pre-Alpha',
+        'Environment :: Web Environment',
+        'Framework :: Isomer :: 1',
+        'License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)',
+        'Operating System :: Linux',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3 :: Only',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: Implementation :: PyPy',
+        'Programming Language :: Python :: Implementation :: CPython'
+    ],
+    packages=find_packages(),
+    include_package_data=True,
+    long_description="""HFOS - Equipment
 ================
 
 A module to keep lists of equipment and manage it.
 
 This software package is a plugin module for HFOS.
 """,
-      dependency_links=[],
-      install_requires=[
-          'isomer>=1.0.0'
-      ],
-      entry_points="""[isomer.components]
-    equipment=hfos.equipment.equipment:Equipment
+    dependency_links=[],
+    install_requires=[
+        'isomer>=1.0.0'
+    ],
+    entry_points="""[isomer.components]
+    equipment=isomer.equipment.equipment:Equipment
 [isomer.schemata]
-    equipment=hfos.equipment.schemata.equipment:Equipment
+    equipment=isomer.equipment.schemata.equipment:Equipment
     """,
-      test_suite="tests.main.main",
-      )
+    test_suite="tests.main.main",
+)
