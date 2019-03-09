@@ -25,7 +25,7 @@
 import angular from 'angular';
 import uirouter from 'angular-ui-router';
 
-import { routing } from './equipment.config.js';
+import {routing} from './equipment.config.js';
 
 import equipmentcomponent from './equipment/equipment.js';
 import template from './equipment/equipment.tpl.html';

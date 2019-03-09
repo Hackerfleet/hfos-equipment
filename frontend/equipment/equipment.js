@@ -39,7 +39,7 @@ class equipmentcomponent {
         self.equipment = {};
 
         this.getEquipment = function () {
-            self.op.search('equipment', '', '*').then(function(msg){
+            self.op.search('equipment', '', '*').then(function (msg) {
                 for (let item of msg.data.list) {
                     self.equipment[item.uuid] = item;
                 }
